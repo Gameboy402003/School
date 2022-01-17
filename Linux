@@ -30,4 +30,3 @@ sudo zypper in phpMyAdmin
 sudo mysql -p -u root
 GRANT ALL PRIVILEGES ON *.* TO 'root'@localhost;
 #install wordpress
-test
