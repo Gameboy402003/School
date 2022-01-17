@@ -1,0 +1,32 @@
+#update System
+Sudo zypper update
+sudo zypper upgrade
+#install Apache
+sudo zypper install apache2 -y
+#start Apache
+sudo systemctl start apache2
+sudo systemctl enable apache2
+#give premisions/make web page
+sudo chmod ugo+rwx /srv/www/htdocs/
+sudo nano /srv/www/htdocs/index.html
+#basic html
+<html><body><h1>Welcome to my web site!</h1></body></html>
+#install php
+sudo zypper in php7 php7-mysql apache2-mod_php7
+sudo a2enmod php7
+sudo AddType application/x-httpd-php .php
+#restart Apache
+sudo systemctl restart apache2
+#install Mysql
+sudo zypper in mariadb mariadb-tools
+#start mysql
+sudo systemctl start mysql
+sudo systemctl enable mysql
+#configure mysql
+sudo mysql_secure_installation
+#install phpmyadmin
+sudo zypper in phpMyAdmin
+#configure database for phpmyadmin
+sudo mysql -p -u root
+GRANT ALL PRIVILEGES ON *.* TO 'root'@localhost;
+#install wordpress
