@@ -49,3 +49,5 @@ sudo chmod 775 -R /srv/www/htdocs/
 sudo systemctl restart apache2
 #remove standard html
 sudo rm -rf /srv/www/htdocs/index.html
+#go to your wordpress website
+127.0.0.1
