@@ -24,6 +24,7 @@ sudo systemctl start mysql
 sudo systemctl enable mysql
 #configure mysql
 sudo mysql_secure_installation
+#dont use mysql password as root!!!!!
 #install phpmyadmin
 sudo zypper in phpMyAdmin
 #configure database for phpmyadmin
