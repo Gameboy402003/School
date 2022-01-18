@@ -1,3 +1,4 @@
+USE A CLEAN INSTALL OPENSUSE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #update System
 sudo zypper update
 #install Apache
@@ -41,6 +42,10 @@ CREATE DATABASE wordpress;
 GRANT ALL ON wordpress.* TO 'root'@'localhost';
 #change username and password database
 sudo nano wp-config.php
+#DB_NAME = wordpress
+#DB_USER = root
+#DB_PASSWORD = <your chosen password>
+#DB_HOST = localhost
 #change ownership
 sudo chown -R wwwrun:www /srv/www/htdocs/
 sudo chmod 775 -R /srv/www/htdocs/
@@ -49,4 +54,4 @@ sudo systemctl restart apache2
 #remove standard html
 sudo rm -rf /srv/www/htdocs/index.html
 #go to your wordpress website
-127.0.0.1
+127.0.0.1/wordpress
