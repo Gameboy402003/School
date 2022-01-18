@@ -1,6 +1,5 @@
 #update System
-Sudo zypper update
-sudo zypper upgrade
+sudo zypper update
 #install Apache
 sudo zypper install apache2 -y
 #start Apache
