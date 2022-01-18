@@ -2,7 +2,7 @@ USE A CLEAN INSTALL OPENSUSE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #update System
 sudo zypper update
 #install Apache
-sudo zypper install apache2 -y
+sudo zypper install apache2
 #start Apache
 sudo systemctl start apache2
 sudo systemctl enable apache2
