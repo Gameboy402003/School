@@ -35,7 +35,9 @@ cd /mnt
 sudo wget http://wordpress.org/latest.tar.gz
 sudo tar xzf latest.tar.gz
 sudo mv wordpress /srv/www/htdocs/
-cd /srv/www/htdocs/wordpress/
+cd /srv/www/htdocs/
+sudo cp ./wordpress. ./ -r
+sudo rm -rf ./wordpress
 sudo mv wp-config-sample.php wp-config.php
 #make database wordpress
 sudo mysql -u root -p
